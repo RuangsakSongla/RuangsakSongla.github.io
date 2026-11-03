@@ -1,1 +1,104 @@
 
+# 🧪 Personal Sandbox & Prototype Lab
+
+> พื้นที่ทดลอง พัฒนาระบบต้นแบบ (Prototype) และทดสอบฟังก์ชันใหม่สำหรับใช้งานส่วนตัว
+
+---
+
+## 📌 เกี่ยวกับโปรเจกต์ (Overview)
+
+Repository นี้สร้างขึ้นเพื่อเป็นพื้นที่ทดลอง (Playground/Sandbox) สำหรับทดสอบแนวคิด, การออกแบบ UI/UX, ฟังก์ชันการทำงานของระบบ (Features), ตลอดจนการเชื่อมต่อ API หรือฐานข้อมูลต่าง ๆ ก่อนนำไปประยุกต์ใช้ในโปรเจกต์จริง
+
+### 🎯 เป้าหมายของการทดสอบ (Objectives)
+- ทดสอบระบบเบื้องต้น (PoC - Proof of Concept)
+- ลองใช้งานเครื่องมือ / Library / Framework ใหม่ ๆ
+- พัฒนาหน้าจอ Dashboard / Back-office ต้นแบบ
+- ตรวจสอบ Flow การทำงานของระบบ (User Flow & State Management)
+
+---
+
+## 🛠️ เทคโนโลยีที่ใช้ (Tech Stack)
+
+*(สามารถปรับเปลี่ยนตามเครื่องมือที่คุณเลือกใช้)*
+
+- **Frontend:** React / Next.js / Vue.js / Plain HTML+Tailwind CSS
+- **Backend / API:** Node.js (Express) / NestJS / Supabase / Mock API
+- **Database / Storage:** PostgreSQL / MongoDB / LocalStorage
+- **Deployment:** Vercel / Netlify / Render / Docker
+
+---
+
+## 🚀 ฟังก์ชันและโมดูลที่กำลังทดสอบ (Features Under Test)
+
+- [ ] **ระบบยืนยันตัวตน (Authentication):** ทดสอบ Login / Logout / Session & JWT
+- [ ] **ระบบจัดการข้อมูล (CRUD Operations):** สร้าง อ่าน แก้ไข ลบ ข้อมูลจำลอง
+- [ ] **ระบบแสดงผลข้อมูล (Dashboard & Analytics):** ตารางข้อมูล (Data Table), ฟิลเตอร์, กราฟ
+- [ ] **การเชื่อมต่อ API ภายนอก (Third-party Integration):** Webhook, Payment Gateway, REST/GraphQL
+- [ ] **ตั้งค่าสถานะและสิทธิ์ (Role & Permissions):** กำหนดสิทธิ์ Admin vs User
+
+---
+
+## 💻 วิธีการติดตั้งและรันโปรเจกต์ (Getting Started)
+
+### ข้อกำหนดเบื้องต้น (Prerequisites)
+- [Node.js](https://nodejs.org/) (เวอร์ชัน 18 ขึ้นไป แนะนำ)
+- [Git](https://git-scm.com/)
+- ตัวจัดการแพ็กเกจ: `npm`, `pnpm` หรือ `yarn`
+
+### ขั้นตอนการรัน (Installation)
+
+1. **Clone repository:**
+   ```bash
+   git clone https://github.com/<your-username>/<repo-name>.git
+   cd <repo-name>
+   ```
+
+2. **ติดตั้ง Dependencies:**
+   ```bash
+   npm install
+   # หรือ
+   pnpm install
+   ```
+
+3. **ตั้งค่า Environment Variables (ถ้ามี):**
+   ```bash
+   cp .env.example .env.local
+   ```
+
+4. **เริ่มรันโปรเจกต์ในโหมด Development:**
+   ```bash
+   npm run dev
+   ```
+
+5. เปิดเบราว์เซอร์ไปที่: `http://localhost:3000` (หรือพอร์ตที่ระบบระบุ)
+
+---
+
+## 📂 โครงสร้างโฟลเดอร์ (Project Structure)
+
+```text
+├── public/          # ไฟล์ Static ทั่วไป เช่น รูปภาพ, ไอคอน
+├── src/
+│   ├── assets/      # สื่อและสไตล์ชีต
+│   ├── components/  # Reusable UI Components
+│   ├── pages/views/ # หน้าต่าง ๆ ของระบบ
+│   ├── services/    # จัดการ API Call หรือ Business Logic
+│   └── utils/       # ฟังก์ชันช่วยเหลือ (Helper Functions)
+├── .env.example     # ตัวอย่าง Environment variables
+├── package.json     # ข้อมูลโปรเจกต์และ Dependencies
+└── README.md        # เอกสารแนะนำโปรเจกต์
+```
+
+---
+
+## 📝 บันทึกการทดสอบ (Dev Notes & Changelog)
+
+- **v0.1.0 (Init):** เริ่มต้นตั้งค่าโครงสร้างโปรเจกต์ และเตรียมหน้า Home/Dashboard
+- **v0.2.0 (In Progress):** ทดสอบเชื่อมต่อ API จำลอง (Mock Data)
+
+---
+
+## 👤 ผู้พัฒนา (Author)
+
+- **Name:** Your Name / Handle
+- **Contact:** your-email@example.com
